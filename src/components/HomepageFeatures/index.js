@@ -4,20 +4,18 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Lorem ipsum',
+    title: 'API Reference',
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        In this documentation you'll be able to check the details of the different endpoints.
       </>
     ),
   },
   {
-    title: 'Lorem ipsum',
+    title: 'Resources',
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        In this documentation you'll be able to learn how the different resources are used.
       </>
     ),
   },
