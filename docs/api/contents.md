@@ -64,7 +64,7 @@ The **GET** `/contents` endpoint is used to retrieve contents. For example, it c
 
 ## GET `/contents/{contentId}`
 
-The **GET** `/contents/{contentId}` endpoint is used to retrieve a single contents For example, it can be useful when showing a video or a stream.
+The **GET** `/contents/{contentId}` endpoint is used to retrieve a single content. For example, it can be useful when showing a video or a stream.
 
 #### Route Parameters
 
