@@ -88,6 +88,10 @@ const config = {
                 to: '/docs/intro',
               },
               {
+                label: 'Terminology',
+                to: '/docs/terminology',
+              },
+              {
                 label: 'API',
                 to: '/docs/category/api',
               },
