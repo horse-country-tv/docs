@@ -69,64 +69,67 @@ The **GET** `/contents` endpoint is used to retrieve contents. For example, it c
 * **Code 200** Success
  ```json
 {
-    "data": [
-        {
-            "id": 33740,
-            "parent_id": null,
-            "type": "live_event",
-            "handler": "kaltura",
-            "handler_type": "category",
-            "handler_id": "272113332",
-            "name": "Equestrian in the Park 2022 Australia",
-            "title": {
-                "en": "Equestrian in the Park 2022 Australia"
-            },
-            "description": {
-                "en": "Live stream from the Equestrian in the Park 2022, Australia."
-            },
-            "weight": null,
-            "thumbnail": "https://cdnsecakmi.kaltura.com/p/1934501/thumbnail/entry_id/1_8qqnretk",
-            "thumbnail_handler": "kaltura",
-            "keywords": "",
-            "pricing": null,
-            "start_date": "2022-11-12T06:43:47.000000Z",
-            "end_date": "2022-11-12T23:43:57.000000Z",
-            "countries_include": null,
-            "countries_exclude": null,
-            "created_at": "2022-11-12T06:43:47.000000Z",
-            "updated_at": "2022-11-15T14:53:56.000000Z",
-            "link": "http://dev.horseandcountry.localhost/live/272113332",
-            "recent": true,
-            "currency": null,
-            "price": null,
-            "price_formatted": null,
-            "plans": {
-                "107785": {
-                    "id": "107785",
-                    "kaltura_name": "2674958 - HnC Plus Monthly"
+    "success": true,
+    "data": {
+        "collection": [
+            {
+                "id": 33740,
+                "parent_id": null,
+                "type": "live_event",
+                "handler": "kaltura",
+                "handler_type": "category",
+                "handler_id": "272113332",
+                "name": "Equestrian in the Park 2022 Australia",
+                "title": {
+                    "en": "Equestrian in the Park 2022 Australia"
                 },
-                "107814": {
-                    "id": "107814",
-                    "kaltura_name": "2674957 - HnC Plus Annual"
+                "description": {
+                    "en": "Live stream from the Equestrian in the Park 2022, Australia."
                 },
-                "107817": {
-                    "id": "107817",
-                    "kaltura_name": "2674945 - HnC Plus Gold"
-                },
-                "111607": {
-                    "id": "111607",
-                    "kaltura_name": "2868400 - HnC Plus Gold Monthly"
+                "weight": null,
+                "thumbnail": "https://cdnsecakmi.kaltura.com/p/1934501/thumbnail/entry_id/1_8qqnretk",
+                "thumbnail_handler": "kaltura",
+                "keywords": "",
+                "pricing": null,
+                "start_date": "2022-11-12T06:43:47.000000Z",
+                "end_date": "2022-11-12T23:43:57.000000Z",
+                "countries_include": null,
+                "countries_exclude": null,
+                "created_at": "2022-11-12T06:43:47.000000Z",
+                "updated_at": "2022-11-15T14:53:56.000000Z",
+                "link": "http://dev.horseandcountry.localhost/live/272113332",
+                "recent": true,
+                "currency": null,
+                "price": null,
+                "price_formatted": null,
+                "plans": {
+                    "107785": {
+                        "id": "107785",
+                        "kaltura_name": "2674958 - HnC Plus Monthly"
+                    },
+                    "107814": {
+                        "id": "107814",
+                        "kaltura_name": "2674957 - HnC Plus Annual"
+                    },
+                    "107817": {
+                        "id": "107817",
+                        "kaltura_name": "2674945 - HnC Plus Gold"
+                    },
+                    "111607": {
+                        "id": "111607",
+                        "kaltura_name": "2868400 - HnC Plus Gold Monthly"
+                    }
                 }
-            }
-        },
-        ...
-    ],
-    "meta": {
-        "page": 1,
-        "per_page": 20,
-        "next_page": 2,
-        "prev_page": false,
-        "total_count": 301
+            },
+            ...
+        ],
+        "meta": {
+            "page": 1,
+            "per_page": 20,
+            "next_page": 2,
+            "prev_page": false,
+            "total_count": 301
+        }
     }
 }
  ```
@@ -149,58 +152,56 @@ The **GET** `/contents/{contentId}` endpoint is used to retrieve a single conten
 {
     "success": true,
     "data": {
-        {
-            "id": 26655,
-            "parent_id": null,
-            "type": "live_event",
-            "handler": "kaltura",
-            "handler_type": "category",
-            "handler_id": "254448243",
-            "name": "Osberton Horse Trials 2021",
-            "title": {
-                "en": "Osberton Horse Trials 2021"
+        "id": 26655,
+        "parent_id": null,
+        "type": "live_event",
+        "handler": "kaltura",
+        "handler_type": "category",
+        "handler_id": "254448243",
+        "name": "Osberton Horse Trials 2021",
+        "title": {
+            "en": "Osberton Horse Trials 2021"
+        },
+        "description": {
+            "en": null
+        },
+        "weight": null,
+        "thumbnail": "https://cdnsecakmi.kaltura.com/p/1934501/thumbnail/entry_id/1_89aad76h",
+        "thumbnail_handler": "kaltura",
+        "keywords": "",
+        "pricing": null,
+        "start_date": "2021-10-01T13:22:22.000000Z",
+        "end_date": "2021-10-10T13:22:26.000000Z",
+        "countries_include": null,
+        "countries_exclude": null,
+        "created_at": "2021-10-01T13:22:22.000000Z",
+        "updated_at": "2022-10-18T00:49:36.000000Z",
+        "currency": null,
+        "price": null,
+        "price_formatted": null,
+        "plans": {
+            "107785": {
+                "id": "107785",
+                "kaltura_name": "2674958 - HnC Plus Monthly"
             },
-            "description": {
-                "en": null
+            "107814": {
+                "id": "107814",
+                "kaltura_name": "2674957 - HnC Plus Annual"
             },
-            "weight": null,
-            "thumbnail": "https://cdnsecakmi.kaltura.com/p/1934501/thumbnail/entry_id/1_89aad76h",
-            "thumbnail_handler": "kaltura",
-            "keywords": "",
-            "pricing": null,
-            "start_date": "2021-10-01T13:22:22.000000Z",
-            "end_date": "2021-10-10T13:22:26.000000Z",
-            "countries_include": null,
-            "countries_exclude": null,
-            "created_at": "2021-10-01T13:22:22.000000Z",
-            "updated_at": "2022-10-18T00:49:36.000000Z",
-            "currency": null,
-            "price": null,
-            "price_formatted": null,
-            "plans": {
-                "107785": {
-                    "id": "107785",
-                    "kaltura_name": "2674958 - HnC Plus Monthly"
-                },
-                "107814": {
-                    "id": "107814",
-                    "kaltura_name": "2674957 - HnC Plus Annual"
-                },
-                "107817": {
-                    "id": "107817",
-                    "kaltura_name": "2674945 - HnC Plus Gold"
-                },
-                "111607": {
-                    "id": "111607",
-                    "kaltura_name": "2868400 - HnC Plus Gold Monthly"
-                }
+            "107817": {
+                "id": "107817",
+                "kaltura_name": "2674945 - HnC Plus Gold"
+            },
+            "111607": {
+                "id": "111607",
+                "kaltura_name": "2868400 - HnC Plus Gold Monthly"
             }
         }
     },
 }
  ```
 
-* **Code 401** Failure
+* **Code 404** Failure
  ```json
 {
     "code": 404,

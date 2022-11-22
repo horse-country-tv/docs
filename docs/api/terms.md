@@ -39,6 +39,35 @@ The **GET** `/terms` endpoint is used to retrieve the terms. For example, it can
 
  ***Examples***: `ASC`, `DESC`
 
+#### Response Examples
+
+* **Code 200** Success
+ ```json
+{
+    "success": true,
+    "data": {
+        "collection": [
+            {
+                "id": 456,
+                "kaltura_id": "255285613",
+                "name": "The Ride: Race Across the Steppe",
+                "taxonomy": "category",
+                "created_at": "2022-11-12T01:27:51.000000Z",
+                "updated_at": "2022-11-12T01:27:51.000000Z"
+            },
+            ...
+        ],
+        "meta": {
+            "page": 1,
+            "per_page": 20,
+            "next_page": 2,
+            "prev_page": false,
+            "total_count": 436
+        }
+    }
+}
+ ```
+
 ## GET `/terms/{termId}`
 
 The **GET** `/terms/{termId}` endpoint is used to retrieve a single term.
@@ -48,3 +77,30 @@ The **GET** `/terms/{termId}` endpoint is used to retrieve a single term.
 * **termId**: The content ID to retrieve.
 
   ***Examples***: `2`, `200`
+
+#### Response Examples
+
+
+* **Code 200** Success
+ ```json
+{
+    "success": true,
+    "data": {
+        "id": 456,
+        "kaltura_id": "255285613",
+        "name": "The Ride: Race Across the Steppe",
+        "taxonomy": "category",
+        "created_at": "2022-11-12T01:27:51.000000Z",
+        "updated_at": "2022-11-12T01:27:51.000000Z"
+    }
+}
+ ```
+
+* **Code 404** Failure
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
+}
+ ```
