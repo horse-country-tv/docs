@@ -52,7 +52,7 @@ The **GET** `/auth/user` endpoint is used to return information about the user w
 
 #### Authorization
 
-* **Bearer**: YFormat: `Bearer <TOKEN>`. You can get the bearer token using the `/login` endpoint.
+* **Bearer**: Format: `Bearer <TOKEN>`. You can get the bearer token using the `/login` endpoint.
 
 #### Headers
 
