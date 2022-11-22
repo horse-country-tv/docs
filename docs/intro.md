@@ -23,3 +23,41 @@ This is the base URL for the `production` environment:
 ```
 https://horseandcountry.tv/api/
 ```
+
+## Standards
+
+The API responses will follo the next standards based on the expected results:
+
+* **Value**: When the result is expected to cantain a single value, the next schema is followed as a rule:
+    ```json
+    {
+        success: <true|false>,
+        result: <RESULT>
+    }
+    ```
+* **Resource**: When the result is expected to cantain a single object, the next schema is followed as a rule:
+    ```json
+    {
+        success: <true|false>,
+        data: {
+            <OBJECT_DATA>
+        }
+    }
+    ```
+* **Collection**: When the result is expected to cantain a collection of objects, the next schema is followed as a rule:
+    ```json
+    {
+        success: <true|false>,
+        data: {
+            collection: {
+                {
+                    <OBJECT_DATA>
+                },
+                ...
+            },
+            meta: {
+                <META_DATA>
+            }
+        }
+    }
+    ```

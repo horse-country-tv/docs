@@ -208,3 +208,47 @@ The **GET** `/contents/{contentId}` endpoint is used to retrieve a single conten
     "message": "Resource not found"
 }
  ```
+
+## GET `/contents/{contentId}/access`
+
+The **GET** `/contents/{contentId}/access` endpoint is used to retrieve the user access to a specific content and user.
+
+#### Authorization
+
+* **Bearer**: You can get the bearer token using the `/login` endpoint. Format: `Bearer <TOKEN>`
+
+#### Route Parameters
+
+* **contentId**: The content ID.
+
+  ***Examples***: `2`, `33192`
+
+
+#### Response Examples
+
+* **Code 200** Success (with access)
+ ```json
+    {
+        "code": 200,
+        "success": true,
+        "result": true
+    }
+ ```
+
+ * **Code 402** Success (with no access)
+ ```json
+    {
+        "code": 402,
+        "success": true,
+        "result": false
+    }
+ ```
+
+* **Code 404** Failure (no content found)
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
+}
+ ```
