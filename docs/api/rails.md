@@ -29,6 +29,7 @@ The **GET** `/rail-collections` endpoint will retrieve all rail collections. Eac
             {
                 "id":17,
                 "name":"Show Rail",
+                "mname":"show_rail",
                 "endpoint":"https:\/\/horseandcountry.tv\/api\/contents?type=shows",
                 "created_at":"2022-12-14T02:10:02.000000Z",
                 "updated_at":"2022-12-14T02:10:02.000000Z",
@@ -37,6 +38,7 @@ The **GET** `/rail-collections` endpoint will retrieve all rail collections. Eac
             {
                 "id":18,
                 "name":"Series Rail",
+                "mname":"series_rail",
                 "endpoint":"https:\/\/horseandcountry.tv\/api\/contents?type=series",
                 "created_at":"2022-12-14T02:10:12.000000Z",
                 "updated_at":"2022-12-14T02:10:12.000000Z",
