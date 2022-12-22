@@ -254,7 +254,7 @@ The **GET** `/contents/{contentId}/access` endpoint is used to retrieve the user
 }
  ```
 
- ## GET `/contents/{contentId}/streams`
+## GET `/contents/{contentId}/streams`
 
 The **GET** `/contents/{contentId}/streams` endpoint is used to retrieve the stream sources for video contents. It's available for videos, shows, episosodes, on demand live contents, rider clips, tv channels and live streams. An access check will be performed using the Bearer token, and the streams will not be retrieved if a user do not have access to the content specified via the `contentId` route parameter.
 
