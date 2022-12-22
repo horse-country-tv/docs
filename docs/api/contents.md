@@ -253,3 +253,59 @@ The **GET** `/contents/{contentId}/access` endpoint is used to retrieve the user
     "message": "Resource not found"
 }
  ```
+
+ ## GET `/contents/{contentId}/streams`
+
+The **GET** `/contents/{contentId}/streams` endpoint is used to retrieve the stream sources for video contents. It's available for videos, shows, episosodes, on demand live contents, rider clips, tv channels and live streams. An access check will be performed using the Bearer token, and the streams will not be retrieved if a user do not have access to the content specified via the `contentId` route parameter.
+
+#### Authorization
+
+* **Bearer**: You can get the bearer token using the `/login` endpoint. Format: `Bearer <TOKEN>`
+
+#### Route Parameters
+
+* **contentId**: The content ID.
+
+  ***Examples***: `2`, `33192`
+
+
+#### Response Examples
+
+* **Code 200** Success (with access)
+ ```json
+    {
+        "code": 200,
+        "success": true,
+        "data": [
+            {
+                "width": 1920,
+                "height": 1080,
+                "bitrate": 4128,
+                "frameRate": 29.97,
+                "codec": "avc1",
+                "extension": "mp4",
+                "link": "https://cfvod.kaltura.com/pd/p/1934501/sp/193450100/serveFlavor/entryId/1_1q65gupg/v/1/flavorId/1_5q1anw44/fileName/Cross_Country_Highlights_of_the_Top_5_from_the_CIC3*_(HD_1080_-_WEB_(H264_4000)).mp4/name/a.mp4",
+                "default": 1
+            },
+            ...
+        ]
+    }
+ ```
+
+ * **Code 402** Success (with no access)
+ ```json
+    {
+        "code": 402,
+        "success": false,
+        "message ": "Forbidden access"
+    }
+ ```
+
+* **Code 404** Failure (no content found)
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
+}
+ ```
