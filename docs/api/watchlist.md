@@ -170,6 +170,32 @@ The **POST** `/watchlist` endpoint is used to add an element to the watchlist fo
 }
  ```
 
+## DELETE `/watchlist`
+
+The **DELETE** `/watchlist` endpoint is used to delete all the contents added to the watchlist for the user who is currently logged in.
+
+#### Authorization
+
+* **Bearer**: You can get the bearer token using the `/login` endpoint. Format: `Bearer <TOKEN>`
+
+#### Response Examples
+
+* **Code 200** Success (with access)
+ ```json
+{
+    "code": 200,
+    "success": true,
+    "message ": "Resources correctly deleted"
+}
+ ```
+
+* **Code 401** Unauthenticated
+ ```json
+{
+    "success": false,
+    "message": "Unauthenticated."
+}
+ ```
 
 ## DELETE `/watchlist/{elementId}`
 
@@ -214,4 +240,10 @@ The **DELETE** `/watchlist/{elementId}` endpoint is used to delete the specified
         "message": "Forbidden"
     }
  ```
-
+* **Code 401** Unauthenticated
+ ```json
+{
+    "success": false,
+    "message": "Unauthenticated."
+}
+ ```
