@@ -140,7 +140,8 @@ The **POST** `/watchlist` endpoint is used to add an element to the watchlist fo
  ```json
 {
     "success": true,
-    "message ": "Resource correctly created"
+    "message ": "Resource correctly created",
+    "code": 201
 }
  ```
 
@@ -149,7 +150,7 @@ The **POST** `/watchlist` endpoint is used to add an element to the watchlist fo
 {
     "code": 400,
     "success": false,
-    "message": "'The content ID was not provided"
+    "message": "The content ID was not provided"
 }
  ```
 
@@ -158,7 +159,7 @@ The **POST** `/watchlist` endpoint is used to add an element to the watchlist fo
 {
     "code": 404,
     "success": false,
-    "message": "'The content was not found"
+    "message": "The content was not found"
 }
  ```
 
@@ -240,6 +241,7 @@ The **DELETE** `/watchlist/{elementId}` endpoint is used to delete the specified
         "message": "Forbidden"
     }
  ```
+ 
 * **Code 401** Unauthenticated
  ```json
 {
