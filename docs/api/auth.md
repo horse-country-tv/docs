@@ -89,3 +89,43 @@ The **GET** `/auth/user` endpoint is used to return information about the user w
     "message": "Unauthenticated."
 }
  ```
+
+## POST `/auth/password/reset`
+
+The **POST** `/auth/password/reset` endpoint is used to reset the password of the user with the specified email address.
+
+#### Headers
+
+* **Format**: `application/json`
+* **Accept**: `application/json`
+
+#### Request Body Schema
+
+* **`email`** *required*: The email of the user.
+
+#### Request Example
+
+```json
+{
+    "email":  "example@domain.tld",
+}
+```
+
+#### Response Examples
+
+* **Code 200** Success. The user will get an email with the instructions to reset his password.
+ ```json
+{
+    "success": true,
+    "code": 200,
+    "message ": "Password reset link has been sent to your email"
+}
+ ```
+
+* **Code 400** Failure.
+ ```json
+{
+    "success": false,
+    "code": 400,
+    "message ": "The customer with the given email address does not exists."
+}
