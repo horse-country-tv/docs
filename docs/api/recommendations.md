@@ -16,7 +16,6 @@ The **GET** `/recommendations` endpoint is used to retrieve customised user reco
 
 * **Code 200** Success
  ```json
-
 {
     "success": true,
     "data": [
