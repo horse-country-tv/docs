@@ -62,7 +62,9 @@ The **GET** `/contents` endpoint is used to retrieve contents. For example, it c
 
  ***Examples***: `ASC`, `DESC`
 
+* **`thumbnails`**: Used to specify the sizes of the thumbnails to retrieve in pixels. When specified, the `thumbnails` field will be added. You can specify many comma separated sizes.
 
+ ***Examples***: `600`, `600,800`
 
 #### Response Examples
 
