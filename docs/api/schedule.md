@@ -16,6 +16,10 @@ The **GET** `/schedule` endpoint is used to retrieve the streams schedule, provi
 
 * **`live`**: If this paramter is present and set to `1`, only the scheduled elements which are currently live will be retrieved.
 
+* **`upcoming`**: If this paramter is present and set to `1`, only the upcoming scheduled elements will be retrieved.
+
+* **`days`**: When the `upcoming` parameter is set to `1`, the `days` parameter can be used to delimit the number of days in the future for the scheduled elements.
+
 * **`content_id`**: used to filter the scheduled elements by the content or live event they belong to.
 
  ***Examples***: `24864`
