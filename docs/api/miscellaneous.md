@@ -18,8 +18,6 @@ The **GET** `/legal` will retrieve content of the terms and conditions for a spe
 
  ***Examples***: `en|en-us|de|nl|sv|`
 
- #### Query Parameters
-
 #### Response Examples
 
 * **Code 200** Success
