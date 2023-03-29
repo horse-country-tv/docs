@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Miscellaneous
 
-## GET `/legal/{languageCode}`
+## GET `/legal/{languageCode?}`
 
 The **GET** `/legal` will retrieve content of the terms and conditions for a specified language code.
 
@@ -12,11 +12,11 @@ The **GET** `/legal` will retrieve content of the terms and conditions for a spe
 
 * **Accept**: `application/json`
 
-#### Path Parameters
+#### Route Parameters
 
 * **`languageCode`**: The parameter specify the language code of the terms and conditions to retrieve.
 
- ***Examples***: `en|en-us|de|nl|sv|`
+ ***Examples***: `en`, `en-us`, `de`, `nl`, `sv`
 
 #### Response Examples
 
@@ -41,5 +41,13 @@ The **GET** `/legal` will retrieve content of the terms and conditions for a spe
       }
     ]
   }
+}
+ ```
+* **Code 404** Failure
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
 }
  ```
