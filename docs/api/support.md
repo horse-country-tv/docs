@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Support
 
-## GET `/support/context/{contextName?}/texts`
+## GET `/support/context/{contextName}/texts`
 
 This endpoint will retrieve the text strings for the specified context, organized by language code.
 
