@@ -14,7 +14,7 @@ The **GET** `/legal` will retrieve content of the terms and conditions for a spe
 
 #### Route Parameters
 
-* **`languageCode`**: The parameter specify the language code of the terms and conditions to retrieve.
+* **`languageCode`**: This parameter specifies the language code of the terms and conditions to retrieve.
 
  ***Examples***: `en`, `en-us`, `de`, `nl`, `sv`
 
