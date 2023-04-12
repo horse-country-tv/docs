@@ -311,3 +311,48 @@ The **GET** `/contents/{contentId}/streams` endpoint is used to retrieve the str
     "message": "Resource not found"
 }
  ```
+
+ 
+## GET `/contents/{contentId}/m3u8`
+
+The **GET** `/contents/{contentId}/m3u8` endpoint is used to get the m3u8 HLS file. It's available for videos, shows, episosodes, on demand live contents, rider clips, tv channels and live streams. An access check will be performed using the Bearer token, and the file will not be retrieved if a user does not have access to the content specified via the `contentId` route parameter.
+
+#### Authorization
+
+* **Bearer**: You can get the bearer token using the `/login` endpoint. Format: `Bearer <TOKEN>`
+
+#### Route Parameters
+
+* **contentId**: The content ID.
+
+  ***Examples***: `2`, `36425`
+
+
+#### Response Examples
+
+* **Code 200** Success (with access)
+ ```json
+    {
+        "code": 200,
+        "success": true,
+        "data": "https://cfvod.kaltura.com/p/1934501/sp/0/playManifest/entryId/1_pbuxf6w9/format/applehttp/protocol/https/flavorParamId/301971/video.m3u8"
+    }
+ ```
+
+ * **Code 402** Success (with no access)
+ ```json
+    {
+        "code": 402,
+        "success": false,
+        "message ": "Forbidden access"
+    }
+ ```
+
+* **Code 404** Failure (no content found)
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
+}
+ ```
