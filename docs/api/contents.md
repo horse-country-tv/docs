@@ -356,3 +356,35 @@ The **GET** `/contents/{contentId}/m3u8` endpoint is used to get the m3u8 HLS fi
     "message": "Resource not found"
 }
  ```
+
+
+## GET `/contents/{contentId}/qr`
+
+The **GET** `/contents/{contentId}/qr` endpoint is used to get the m3u8 HLS file. It's available for shows, series, seasons, episodes, live events, on demand live contents, tv channels and live streams.
+
+#### Route Parameters
+
+* **contentId**: The content ID.
+
+  ***Examples***: `33543`
+
+
+#### Response Examples
+
+* **Code 200** Success (with access)
+ ```json
+    {
+        "code": 200,
+        "success": true,
+        "result":"https:\/\/dev.horseandcountry.tv\/storage\/qr\/contents\/33543.png"
+    }
+ ```
+
+* **Code 404** Failure (no content found)
+ ```json
+{
+    "code": 404,
+    "success": false,
+    "message": "Resource not found"
+}
+ ```
