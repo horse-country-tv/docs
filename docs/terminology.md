@@ -18,7 +18,7 @@ Here you can find the description and hierarchy of the H&C contents:
 * **Episodes**: Single video assets belonging to a Season. Use the `type=episode` filter of the `/contents` endpoint to filter them.
 * **TV Channels**: TV Channels are single live video streams. Use the `type=tv_channel` filter of the `/contents` endpoint to filter them..
 * **Live Events**: On the same way as the series, Live Events are top level containers which can contain Live Streams, On Demand Live videos and Rider Clips. Use the `type=live_event` filter of the `/contents` endpoint to filter them.
-* **Live Stream**: Single video streams which belong to a Live Event. Use the `type=on_demand_live` filter of the `/contents` endpoint to filter them.
+* **Live Stream**: Single video streams which belong to a Live Event. Use the `type=live_stream` filter of the `/contents` endpoint to filter them.
 * **On Demand Live**: Single video assets belonging to a Live Event. Use the `type=on_demand_live` filter of the `/contents` endpoint to filter them.
 * **Rider Clips**: Single video assets belonging to a Live Event. Use the `type=rider_clip` filter of the `/contents` endpoint to filter them.
 
