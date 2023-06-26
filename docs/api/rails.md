@@ -14,7 +14,7 @@ The **GET** `/rail-collections` endpoint will retrieve all rail collections. Eac
 
 #### Query Parameters
 
-* **`with`**: Allws to get the relations of the rail collections. One or more comma separated values can be specified.
+* **`with`**: Allows to get the relations of the rail collections. One or more comma separated values can be specified.
 
  ***Examples***: `rails`
 
